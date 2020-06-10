@@ -94,7 +94,7 @@ def create():
 
 	return data
 
-#data = create()
+#ata = create()
 
 #all_p = func(data)
 #for i in all_p:
