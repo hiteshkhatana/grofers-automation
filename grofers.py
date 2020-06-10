@@ -29,13 +29,13 @@ def func(data):
     
     driver.get(r"https://grofers.com/")
     
-    location = driver.find_element_by_class_name("Select-control")
-    location.click()
-    search = driver.find_element_by_css_selector("input[role='combobox']")
-    search.send_keys("New delhi")
-    search.send_keys(Keys.RETURN)
+    #location = driver.find_element_by_class_name("Select-control")
+    #location.click()
+    #search = driver.find_element_by_css_selector("input[role='combobox']")
+    #search.send_keys("New delhi")
+    #search.send_keys(Keys.RETURN)
     
-    time.sleep(5)
+    time.sleep(3)
     
     for item in data["product"]:
             driver.find_element_by_class_name("react-autosuggest__input").click()
