@@ -94,8 +94,8 @@ def create():
 
 	return data
 
-data = create()
+#data = create()
 
-all_p = func(data)
-for i in all_p:
-	print(i)
+#all_p = func(data)
+#for i in all_p:
+#	print(i)
