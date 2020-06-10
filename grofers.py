@@ -55,7 +55,7 @@ def func(data):
             product_name = product.find_element_by_class_name('plp-product__name--box').text
             if product_name == item:
                 add = product.find_element_by_class_name('add-to-cart__add-btn')
-                add.click()
+                driver.execute_script("arguments[0].click();", add)
                 ordered_list.append(item + " is ordered")
                 break
 
