@@ -48,22 +48,19 @@ def func(item):
 
 
 	time.sleep(3)
-
-
+	
+	
 	all_products = driver.find_elements_by_xpath("//div[@class='plp-product']")
 	for product in all_products:
-	    product_name = product.find_element_by_class_name('plp-product__name--box').text
-	    if product_name == item:
-		add = product.find_element_by_class_name('add-to-cart__add-btn')
-		driver.execute_script("arguments[0].click();", add)
-		ordered_list = item
-		return(ordered_list)
-		break
-
-
-
-
-
+		product_name = product.find_element_by_class_name('plp-product__name--box').text
+		if product_name == item:
+			add = product.find_element_by_class_name('add-to-cart__add-btn')
+			driver.execute_script("arguments[0].click();", add)
+			ordered_list = item
+			return(ordered_list)
+		
+		
+		
 	time.sleep(2)
 	driver.quit()
 	#return(ordered_list)
