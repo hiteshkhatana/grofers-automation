@@ -26,7 +26,7 @@ def order():
     for item in data["product"]:
         all_p = func(item)
 
-        return render_template('index.html', ordered_list='Employee Salary should be $ {}'.format(all_p))
+        return render_template('index.html', ordered_list='{} is ordered'.format(all_p))
 
 
 if __name__ == "__main__":
