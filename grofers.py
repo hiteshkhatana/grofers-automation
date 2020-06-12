@@ -63,8 +63,8 @@ def func(data):
 
 
 
-    time.sleep(5)
-    #driver.quit()
+    time.sleep(2)
+    driver.quit()
     return(ordered_list)
 
 
