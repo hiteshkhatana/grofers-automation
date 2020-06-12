@@ -22,10 +22,11 @@ def order():
 
     #output = round(prediction[0], 2)
     data = create()
+    
+    for item in data["product"]:
+        all_p = func(item)
 
-    all_p = func(data)
-
-    return render_template('index.html', ordered_list='Employee Salary should be $ {}'.format(all_p))
+        return render_template('index.html', ordered_list='Employee Salary should be $ {}'.format(all_p))
 
 
 if __name__ == "__main__":
